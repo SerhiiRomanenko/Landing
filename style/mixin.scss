@@ -1,0 +1,50 @@
+@mixin title {
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+    margin-bottom: 35px;
+
+    @media (max-width: 1223px) {
+        font-size: 34px;
+    }
+
+    & span {
+        font-weight: 300;
+
+        @media (max-width: 1223px) {
+            font-size: 34px;
+        }
+    }
+}
+
+@mixin text {
+    opacity: 0.9;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+
+    @media (max-width: 1223px) {
+        font-size: 15px;
+    }
+}
+
+@mixin button {
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #262f32;
+    padding: 10px 39px;
+    border: solid 1px #262f32;
+    border-radius: 10px;
+    transition: .4s;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+    }
+}
